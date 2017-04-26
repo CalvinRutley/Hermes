@@ -13,11 +13,13 @@
 from django.utils.translation import ugettext_lazy as _
 
 import horizon
-from openstack_dashboard.dashboards.testDash import dashboard
-
-class Testpan(horizon.Panel):
-    name = _("Output")
-    slug = "testPan"
 
 
-dashboard.Testdash.register(Testpan)
+class Testdash(horizon.Dashboard):
+    name = _("Notifications")
+    slug = "testDash"
+    panels = ('Notifications', )  # Add your panels here.
+    default_panel = 'Notifications'  # Specify the slug of the dashboard's default panel.
+
+
+horizon.register(Testdash)
