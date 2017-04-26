@@ -8,7 +8,7 @@
   describe('Notification Service', function () {
 
     var service;
-    beforeEach(module('Output'));
+    beforeEach(module('Notifications'));
     beforeEach(inject(function($injector) {
       service = $injector.get('NotificationService');
     }));

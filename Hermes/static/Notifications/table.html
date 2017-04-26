@@ -1,4 +1,4 @@
-<div Output ng-app="Output" ng-controller="OutController as controller">
+<div Output ng-app="Notifications" ng-controller="NotificationController as nctrl">
     <div class="bs-component">
         <ul class="nav nav-tabs">
           <li class="active"><a translate href="#notifications" data-toggle="tab">Notifications</a></li>
@@ -6,11 +6,11 @@
         </ul>
         <div id="myTabContent" class="tab-content">
           <div class="tab-pane fade active in" id="notifications">
-              <hz-magic-search-context filter-facets="controller.filterFacets">
+              <hz-magic-search-context filter-facets="nctrl.filterFacets">
               <hz-magic-search-bar>search</hz-magic-search-bar>
                 <table st-table="displayTable"
                  st-magic-search
-                 st-safe-src="controller.notificationsTable"
+                 st-safe-src="nctrl.notificationsTable"
                  hz-table class="table table-striped table-rsp table-detail">
                     <thead>
                         <th>Name</th>
@@ -44,19 +44,19 @@
               <table class="table table-striped table-rsp table-detail">
                   <tr>
                       <th>Connected</th>
-                      <td>{$ controller.connected $}</td>
+                      <td>{$ nctrl.connected $}</td>
                   </tr>
                   <tr>
                       <th>Authenticated</th>
-                      <td>{$ controller.authenticated $}</td>
+                      <td>{$ nctrl.authenticated $}</td>
                   </tr>
                   <tr>
                       <th>Subscribed</th>
-                      <td>{$ controller.subscribed $}</td>
+                      <td>{$ nctrl.subscribed $}</td>
                   </tr>
                   <tr>
                       <th>Active Subscriptions</th>
-                      <td>{$ controller.activeSubscriptions $}</td>
+                      <td>{$ nctrl.activeSubscriptions $}</td>
                   </tr>
               </table>
           </div>

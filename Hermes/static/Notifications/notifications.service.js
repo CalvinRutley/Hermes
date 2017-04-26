@@ -5,7 +5,7 @@
   'use strict';
 
   angular
-      .module('Output')
+      .module('Notifications')
       .factory('NotificationService', NotificationService);
 
   NotificationService.$inject = [

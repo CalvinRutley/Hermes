@@ -6,7 +6,7 @@
 
   angular
     .module('horizon.dashboard.testDash', [
-      'Output'
+      'Notifications'
     ])
     .config(config);
 

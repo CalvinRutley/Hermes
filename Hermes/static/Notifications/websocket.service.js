@@ -4,7 +4,7 @@
 (function() {
   'use strict';
 
-  angular.module('Output').factory('WebsocketService', WebsocketService);
+  angular.module('Notifications').factory('WebsocketService', WebsocketService);
 
   WebsocketService.$inject = [
     '$q',

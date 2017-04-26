@@ -4,15 +4,15 @@
 (function() {
   'use strict';
   angular
-      .module('Output')
-      .controller('OutController', OutController);
+      .module('Notifications')
+      .controller('NotificationController', NotificationController);
 
   OutController.$inject = [
     'NotificationService',
     'WebsocketService'
   ];
 
-  function OutController(NotificationService, WebsocketService) {
+  function NotificationController(NotificationService, WebsocketService) {
 
     var ctrl = this;
     ctrl.notificationsTable = NotificationService.eventsTable;
