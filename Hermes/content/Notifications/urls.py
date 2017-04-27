@@ -15,5 +15,5 @@ from horizon.browsers.views import AngularIndexView
 
 
 urlpatterns = [
-    url(r'^$', AngularIndexView.as_view(title='Output'), name='index'),
+    url(r'^$', AngularIndexView.as_view(title='Notifications'), name='index'),
 ]

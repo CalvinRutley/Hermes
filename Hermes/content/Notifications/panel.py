@@ -15,9 +15,9 @@ from django.utils.translation import ugettext_lazy as _
 import horizon
 from openstack_dashboard.dashboards.testDash import dashboard
 
-class Testpan(horizon.Panel):
-    name = _("Output")
+class Notifications(horizon.Panel):
+    name = _("Notifications")
     slug = "Notifications"
 
 
-dashboard.Testdash.register(Testpan)
+dashboard.admin.register(Notifications)
