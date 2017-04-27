@@ -7,7 +7,7 @@
       .module('Notifications')
       .controller('NotificationController', NotificationController);
 
-  OutController.$inject = [
+  Notifications.$inject = [
     'NotificationService',
     'WebsocketService'
   ];

@@ -15,11 +15,11 @@ DISABLED = False
 
 # A list of applications to be added to INSTALLED_APPS.
 ADD_INSTALLED_APPS = [
-    'Notifications',
+    'Hermes',
 ]
 
 ADD_ANGULAR_MODULES = [
-    'horizon.dashboard.Notifications',
+    'Notifications',
 ]
 
 AUTO_DISCOVER_STATIC_FILES = True
